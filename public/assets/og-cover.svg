@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="og-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C4CF1"/>
+      <stop offset="48%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#080B1E"/>
+  <rect width="1200" height="630" fill="url(#og-grad)" opacity="0.15"/>
+  <text x="80" y="330" font-family="Arial, sans-serif" font-weight="800" font-size="64" fill="#F8FAFC">Muhammad Farhan</text>
+  <text x="80" y="390" font-family="Arial, sans-serif" font-weight="600" font-size="32" fill="#22D3EE">Aspiring Software Developer</text>
+</svg>

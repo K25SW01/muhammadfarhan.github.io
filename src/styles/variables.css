@@ -1,0 +1,40 @@
+:root {
+  /* Colors */
+  --bg-dark: #080b1e;
+  --bg-dark-2: #10152f;
+  --purple: #6c4cf1;
+  --violet: #8b5cf6;
+  --pink: #ec4899;
+  --cyan: #22d3ee;
+  --warm: #fbbf24;
+
+  --text-main: #f8fafc;
+  --text-secondary: #b7c0d8;
+
+  --bg-light: #f7f8fc;
+  --card-white: #ffffff;
+  --text-dark: #172033;
+
+  --border-dark: rgba(248, 250, 252, 0.1);
+  --border-light: rgba(23, 32, 51, 0.1);
+
+  --gradient-main: linear-gradient(135deg, #6c4cf1 0%, #8b5cf6 48%, #ec4899 100%);
+  --gradient-text: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+
+  /* Type */
+  --font-main: 'Inter', 'Segoe UI', Arial, sans-serif;
+
+  /* Layout */
+  --max-width: 1220px;
+  --pad-desktop: 32px;
+  --pad-tablet: 24px;
+  --pad-mobile: 18px;
+  --section-space: 110px;
+  --radius-card: 20px;
+  --radius-btn: 14px;
+
+  --header-height: 78px;
+
+  --shadow-soft: 0 20px 45px -20px rgba(8, 11, 30, 0.35);
+  --shadow-soft-light: 0 20px 45px -25px rgba(23, 32, 51, 0.25);
+}

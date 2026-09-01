@@ -1,0 +1,149 @@
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 44px;
+}
+
+.filter-chip {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border-dark);
+  background: transparent;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+.filter-chip:hover {
+  border-color: rgba(139, 92, 246, 0.5);
+  color: var(--text-main);
+}
+
+.filter-chip-active {
+  background: var(--gradient-main);
+  border-color: transparent;
+  color: #fff;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.project-card {
+  background: rgba(248, 250, 252, 0.03);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.project-thumb {
+  position: relative;
+  aspect-ratio: 200 / 130;
+  background: var(--bg-dark-2);
+}
+
+.project-thumb-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.project-status-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--warm);
+  color: #241a00;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+.project-body {
+  padding: 22px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.project-category {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.project-description {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 6px;
+}
+
+.project-tech-list li {
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: rgba(139, 92, 246, 0.14);
+  color: var(--text-main);
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.project-btn {
+  padding: 10px 16px;
+  font-size: 13.5px;
+}
+
+.project-repo-note {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  margin-top: -2px;
+}
+
+@media (max-width: 1100px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}

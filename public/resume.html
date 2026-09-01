@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Resume | Muhammad Farhan</title>
+<meta name="description" content="Resume of Muhammad Farhan, B.E. Software Engineering undergraduate and aspiring software developer." />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<style>
+  :root {
+    --purple: #6C4CF1;
+    --violet: #8B5CF6;
+    --pink: #EC4899;
+    --cyan: #22D3EE;
+    --dark: #172033;
+    --muted: #59637F;
+    --border: #E4E7F0;
+    --bg: #F7F8FC;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--dark);
+    padding: 40px 20px 80px;
+  }
+  .resume-toolbar {
+    max-width: 820px;
+    margin: 0 auto 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .toolbar-link {
+    color: var(--violet);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .print-btn {
+    background: linear-gradient(135deg, #6C4CF1 0%, #8B5CF6 48%, #EC4899 100%);
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .resume-sheet {
+    max-width: 820px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 48px 52px;
+    box-shadow: 0 20px 60px rgba(23, 32, 51, 0.08);
+  }
+  .resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+  }
+  .resume-name { font-size: 26px; font-weight: 800; margin: 0 0 4px; color: var(--dark); }
+  .resume-role { margin: 0; color: var(--violet); font-weight: 600; font-size: 14px; }
+  .resume-contact { text-align: right; font-size: 13px; color: var(--muted); line-height: 1.8; }
+  .resume-contact a { color: var(--muted); text-decoration: none; }
+  section.resume-section { margin-bottom: 26px; }
+  h2.resume-h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--pink);
+    margin: 0 0 12px;
+  }
+  p, li { font-size: 14.5px; line-height: 1.7; color: #3a4460; }
+  .resume-item { margin-bottom: 14px; }
+  .resume-item-title { font-weight: 700; color: var(--dark); font-size: 15px; }
+  .resume-item-sub { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  ul.resume-list { margin: 0; padding-left: 18px; }
+  .chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    font-size: 12.5px;
+    font-weight: 600;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 5px 12px;
+    color: #3a4460;
+  }
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @media print {
+    body { padding: 0; background: #fff; }
+    .resume-toolbar { display: none; }
+    .resume-sheet {
+      box-shadow: none;
+      border: none;
+      border-radius: 0;
+      max-width: 100%;
+      padding: 0;
+    }
+    @page { size: A4; margin: 18mm; }
+  }
+  @media (max-width: 640px) {
+    .resume-sheet { padding: 32px 22px; }
+    .resume-header { flex-direction: column; }
+    .resume-contact { text-align: left; }
+    .two-col { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <div class="resume-toolbar">
+    <a href="/" class="toolbar-link">&larr; Back to Portfolio</a>
+    <button type="button" class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <main class="resume-sheet">
+    <header class="resume-header">
+      <div>
+        <p class="resume-name">Muhammad Farhan</p>
+        <p class="resume-role">B.E. Software Engineering Undergraduate | Aspiring Software Developer</p>
+      </div>
+      <div class="resume-contact">
+        <div><a href="mailto:smuhammadfarhanw@gmail.com">smuhammadfarhanw@gmail.com</a></div>
+        <div><a href="tel:+923003939929">+92 300 3939929</a></div>
+        <div><a href="https://wa.me/923003939929" target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
+        <div><a href="https://www.linkedin.com/in/muhammad-farhan-a41785365/" target="_blank" rel="noopener noreferrer">LinkedIn</a> &middot; <a href="https://github.com/K25SW01" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+      </div>
+    </header>
+
+    <section class="resume-section">
+      <h2 class="resume-h2">Professional Summary</h2>
+      <p>
+        Motivated and enthusiastic Software Engineering undergraduate at Mehran University
+        of Engineering and Technology with a strong interest in software development and
+        problem-solving. Passionate about learning modern programming technologies and
+        building practical software solutions. Seeking internship, freelance, and
+        entry-level opportunities to apply technical skills, gain industry experience, and
+        contribute to real-world projects.
+      </p>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="resume-h2">Career Objective</h2>
+      <p>
+        To begin my professional journey as a Software Developer by contributing to
+        innovative projects, continuously improving my technical skills, and delivering
+        high-quality software solutions. I am eager to learn from experienced professionals
+        while building a successful career in software engineering and freelancing.
+      </p>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="resume-h2">Education</h2>
+      <div class="resume-item">
+        <div class="resume-item-title">Bachelor of Engineering (B.E.) in Software Engineering</div>
+        <div class="resume-item-sub">Mehran University of Engineering and Technology (MUET) &middot; Undergraduate (3rd Semester)</div>
+        <p>Studying software development, programming fundamentals, object-oriented programming, basic data structures and software-engineering principles.</p>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="resume-h2">Technical Skills</h2>
+      <div class="chip-row">
+        <span class="chip">C++</span>
+        <span class="chip">Java</span>
+        <span class="chip">Python (Basics)</span>
+        <span class="chip">Object-Oriented Programming</span>
+        <span class="chip">Problem Solving</span>
+        <span class="chip">Basic Data Structures</span>
+        <span class="chip">Basic Git</span>
+        <span class="chip">Basic GitHub</span>
+        <span class="chip">Microsoft Word</span>
+        <span class="chip">Microsoft Excel</span>
+        <span class="chip">Microsoft PowerPoint</span>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="resume-h2">Academic Projects</h2>
+      <div class="resume-item">
+        <div class="resume-item-title">Student Management Record System</div>
+        <p>A desktop application developed to manage student records with Create, Read, Update and Delete operations, applying object-oriented programming concepts. Built with C++.</p>
+      </div>
+      <div class="resume-item">
+        <div class="resume-item-title">Quiz Lab</div>
+        <p>A quiz application with multiple-choice questions, user interaction and automatic score calculation.</p>
+      </div>
+      <div class="resume-item">
+        <div class="resume-item-title">Library Management System</div>
+        <p>A Java-based system for managing books and student records using classes and object-oriented programming concepts.</p>
+      </div>
+    </section>
+
+    <div class="two-col">
+      <section class="resume-section">
+        <h2 class="resume-h2">Strengths</h2>
+        <ul class="resume-list">
+          <li>Quick Learner</li>
+          <li>Strong Problem-Solving Skills</li>
+          <li>Team Collaboration</li>
+          <li>Self-Motivated</li>
+          <li>Willingness to Learn New Technologies</li>
+          <li>Good Communication Skills</li>
+        </ul>
+      </section>
+
+      <section class="resume-section">
+        <h2 class="resume-h2">Languages</h2>
+        <ul class="resume-list">
+          <li>English &mdash; Professional Working Proficiency</li>
+          <li>Urdu &mdash; Native</li>
+          <li>Sindhi &mdash; Native</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="resume-section">
+      <h2 class="resume-h2">Availability</h2>
+      <ul class="resume-list">
+        <li>Software Engineering Internships</li>
+        <li>Junior Developer Roles</li>
+        <li>Freelance Projects</li>
+        <li>Remote Opportunities</li>
+      </ul>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="resume-h2">Social Profiles</h2>
+      <p>
+        LinkedIn: linkedin.com/in/muhammad-farhan-a41785365<br />
+        GitHub: github.com/K25SW01
+      </p>
+    </section>
+  </main>
+</body>
+</html>

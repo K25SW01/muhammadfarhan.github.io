@@ -1,0 +1,32 @@
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-dark);
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+
+.loading-screen-fade {
+  opacity: 0;
+}
+
+.loading-mark {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: 0.02em;
+}
+
+.loading-dot {
+  color: var(--pink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loading-screen {
+    display: none;
+  }
+}
