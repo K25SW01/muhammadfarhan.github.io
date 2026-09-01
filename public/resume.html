@@ -3,9 +3,16 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Resume | Abdul Wasiu Soomro</title>
-<meta name="description" content="Resume of Abdul Wasiu Soomro, WordPress website developer and Software Engineering student." />
+
+<title>Resume | Muhammad Farhan</title>
+
+<meta
+  name="description"
+  content="Resume of Muhammad Farhan, B.E. Software Engineering undergraduate and aspiring software developer."
+/>
+
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
 <style>
   :root {
     --purple: #6C4CF1;
@@ -17,7 +24,11 @@
     --border: #E4E7F0;
     --bg: #F7F8FC;
   }
-  * { box-sizing: border-box; }
+
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     margin: 0;
     font-family: Inter, "Segoe UI", Arial, sans-serif;
@@ -25,6 +36,7 @@
     color: var(--dark);
     padding: 40px 20px 80px;
   }
+
   .resume-toolbar {
     max-width: 820px;
     margin: 0 auto 24px;
@@ -34,14 +46,21 @@
     gap: 16px;
     flex-wrap: wrap;
   }
+
   .toolbar-link {
     color: var(--violet);
     font-weight: 600;
     text-decoration: none;
     font-size: 14px;
   }
+
   .print-btn {
-    background: linear-gradient(135deg, #6C4CF1 0%, #8B5CF6 48%, #EC4899 100%);
+    background: linear-gradient(
+      135deg,
+      #6C4CF1 0%,
+      #8B5CF6 48%,
+      #EC4899 100%
+    );
     color: #fff;
     border: none;
     padding: 10px 22px;
@@ -50,6 +69,11 @@
     font-size: 14px;
     cursor: pointer;
   }
+
+  .print-btn:hover {
+    opacity: 0.92;
+  }
+
   .resume-sheet {
     max-width: 820px;
     margin: 0 auto;
@@ -57,8 +81,9 @@
     border: 1px solid var(--border);
     border-radius: 16px;
     padding: 50px 56px;
-    box-shadow: 0 25px 60px -30px rgba(23,32,51,0.25);
+    box-shadow: 0 25px 60px -30px rgba(23, 32, 51, 0.25);
   }
+
   .resume-header {
     display: flex;
     justify-content: space-between;
@@ -69,16 +94,40 @@
     margin-bottom: 28px;
     flex-wrap: wrap;
   }
-  .resume-name { font-size: 32px; font-weight: 800; margin: 0 0 4px; }
-  .resume-role { font-size: 16px; color: var(--violet); font-weight: 600; margin: 0; }
+
+  .resume-name {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0 0 4px;
+  }
+
+  .resume-role {
+    font-size: 16px;
+    color: var(--violet);
+    font-weight: 600;
+    margin: 0;
+  }
+
   .resume-contact {
     font-size: 13.5px;
     color: var(--muted);
     line-height: 1.9;
     text-align: right;
   }
-  .resume-contact a { color: var(--muted); text-decoration: none; }
-  section.resume-section { margin-bottom: 26px; }
+
+  .resume-contact a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .resume-contact a:hover {
+    color: var(--violet);
+  }
+
+  section.resume-section {
+    margin-bottom: 26px;
+  }
+
   h2.resume-h2 {
     font-size: 13px;
     text-transform: uppercase;
@@ -86,12 +135,45 @@
     color: var(--pink);
     margin: 0 0 12px;
   }
-  p, li { font-size: 14.5px; line-height: 1.7; color: #3a4460; }
-  .resume-item { margin-bottom: 14px; }
-  .resume-item-title { font-weight: 700; color: var(--dark); font-size: 15px; }
-  .resume-item-sub { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
-  ul.resume-list { margin: 0; padding-left: 18px; }
-  .chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+
+  p,
+  li {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: #3a4460;
+  }
+
+  .resume-item {
+    margin-bottom: 16px;
+  }
+
+  .resume-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .resume-item-title {
+    font-weight: 700;
+    color: var(--dark);
+    font-size: 15px;
+  }
+
+  .resume-item-sub {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  ul.resume-list {
+    margin: 0;
+    padding-left: 18px;
+  }
+
+  .chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
   .chip {
     font-size: 12.5px;
     font-weight: 600;
@@ -101,9 +183,33 @@
     padding: 5px 12px;
     color: #3a4460;
   }
+
+  .profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .profile-link {
+    color: var(--violet);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .profile-link:hover {
+    text-decoration: underline;
+  }
+
   @media print {
-    body { padding: 0; background: #fff; }
-    .resume-toolbar { display: none; }
+    body {
+      padding: 0;
+      background: #fff;
+    }
+
+    .resume-toolbar {
+      display: none;
+    }
+
     .resume-sheet {
       box-shadow: none;
       border: none;
@@ -111,111 +217,417 @@
       max-width: 100%;
       padding: 0;
     }
-    @page { size: A4; margin: 18mm; }
+
+    @page {
+      size: A4;
+      margin: 18mm;
+    }
   }
+
   @media (max-width: 640px) {
-    .resume-sheet { padding: 32px 22px; }
-    .resume-header { flex-direction: column; }
-    .resume-contact { text-align: left; }
+    .resume-sheet {
+      padding: 32px 22px;
+    }
+
+    .resume-header {
+      flex-direction: column;
+    }
+
+    .resume-contact {
+      text-align: left;
+    }
+
+    .resume-name {
+      font-size: 28px;
+    }
   }
 </style>
 </head>
+
 <body>
+
   <div class="resume-toolbar">
     <a href="/" class="toolbar-link">&larr; Back to Portfolio</a>
-    <button type="button" class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+
+    <button
+      type="button"
+      class="print-btn"
+      onclick="window.print()"
+    >
+      Print / Save as PDF
+    </button>
   </div>
 
   <main class="resume-sheet">
+
+    <!-- HEADER -->
     <header class="resume-header">
+
       <div>
-        <p class="resume-name">Abdul Wasiu Soomro</p>
-        <p class="resume-role">WordPress Website Developer</p>
+        <p class="resume-name">Muhammad Farhan</p>
+
+        <p class="resume-role">
+          B.E. Software Engineering Undergraduate | Aspiring Software Developer
+        </p>
       </div>
+
       <div class="resume-contact">
-        <div><a href="mailto:abdulwasiusoomro8@gmail.com">abdulwasiusoomro8@gmail.com</a></div>
-        <div><a href="https://wa.me/923108413092" target="_blank" rel="noopener noreferrer">0310-8413092 (WhatsApp)</a></div>
-        <div>Shikarpur, Sindh, Pakistan</div>
-        <div><a href="https://www.linkedin.com/in/abdul-wasiu-soomro-460648383" target="_blank" rel="noopener noreferrer">LinkedIn</a> &middot; <a href="https://github.com/soomroabdulwasiu-blip" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+
+        <div>
+          <a href="mailto:smuhammadfarhanw@gmail.com">
+            smuhammadfarhanw@gmail.com
+          </a>
+        </div>
+
+        <div>
+          <a
+            href="tel:+923003939929"
+          >
+            +92 300 3939929
+          </a>
+        </div>
+
+        <div>
+          Khairpur Mir's, Sindh, Pakistan
+        </div>
+
+        <div>
+          <a
+            href="https://www.linkedin.com/in/muhammad-farhan-a41785365/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+
+          &middot;
+
+          <a
+            href="https://github.com/K25SW01"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+
       </div>
     </header>
 
+
+    <!-- PROFESSIONAL SUMMARY -->
     <section class="resume-section">
-      <h2 class="resume-h2">Professional Summary</h2>
+
+      <h2 class="resume-h2">
+        Professional Summary
+      </h2>
+
       <p>
-        Software Engineering student and WordPress website developer from Shikarpur, Sindh,
-        focused on building responsive, user-friendly websites with WordPress and Elementor
-        while developing broader programming skills in Java, C++ and frontend web
-        development.
+        Motivated and dedicated Software Engineering undergraduate at
+        Mehran University of Engineering and Technology (MUET) with a
+        strong interest in software development, problem-solving, and
+        building practical technology solutions.
       </p>
+
+      <p>
+        Possess foundational knowledge of C++, Java, Python,
+        Object-Oriented Programming, Data Structures, CRUD operations,
+        and Git/GitHub. Passionate about learning modern technologies,
+        developing academic and personal projects, and continuously
+        improving technical skills.
+      </p>
+
+      <p>
+        Currently seeking software engineering internships, junior
+        developer opportunities, freelance projects, and remote roles
+        where I can apply my knowledge, gain professional experience,
+        and contribute to meaningful software solutions.
+      </p>
+
     </section>
 
+
+    <!-- EDUCATION -->
     <section class="resume-section">
-      <h2 class="resume-h2">Education</h2>
+
+      <h2 class="resume-h2">
+        Education
+      </h2>
+
       <div class="resume-item">
-        <div class="resume-item-title">Bachelor of Engineering in Software Engineering</div>
-        <div class="resume-item-sub">Mehran University of Engineering &amp; Technology, Shaheed Zulfiqar Ali Bhutto Campus, Khairpur Mir's &middot; 2025 &ndash; Present</div>
-        <p>Studying software development, programming fundamentals, object-oriented programming, databases and software-engineering principles.</p>
+
+        <div class="resume-item-title">
+          Bachelor of Engineering (B.E.) — Software Engineering
+        </div>
+
+        <div class="resume-item-sub">
+          Mehran University of Engineering and Technology (MUET),
+          Shaheed Zulfiqar Ali Bhutto Campus, Khairpur Mir's
+          &middot; Undergraduate — 3rd Semester
+        </div>
+
+        <p>
+          Currently pursuing a Bachelor of Engineering in Software
+          Engineering with a focus on programming, software development,
+          object-oriented programming, data structures, databases,
+          and software engineering fundamentals.
+        </p>
+
       </div>
+
     </section>
 
+
+    <!-- TECHNICAL SKILLS -->
     <section class="resume-section">
-      <h2 class="resume-h2">Technical Skills</h2>
+
+      <h2 class="resume-h2">
+        Technical Skills
+      </h2>
+
       <div class="chip-row">
-        <span class="chip">WordPress</span>
-        <span class="chip">Elementor</span>
-        <span class="chip">WooCommerce</span>
-        <span class="chip">Theme Customization</span>
-        <span class="chip">HTML5</span>
-        <span class="chip">CSS3</span>
-        <span class="chip">JavaScript</span>
-        <span class="chip">React Basics</span>
-        <span class="chip">Java</span>
+
         <span class="chip">C++</span>
-        <span class="chip">OOP</span>
-        <span class="chip">Git &amp; GitHub</span>
-        <span class="chip">PostgreSQL</span>
-        <span class="chip">XAMPP</span>
-        <span class="chip">pgAdmin</span>
+        <span class="chip">Java</span>
+        <span class="chip">Python — Basic</span>
+
+        <span class="chip">Object-Oriented Programming</span>
+        <span class="chip">Problem Solving</span>
+        <span class="chip">Data Structures</span>
+        <span class="chip">CRUD Operations</span>
+        <span class="chip">Software Development Fundamentals</span>
+
+        <span class="chip">Git</span>
+        <span class="chip">GitHub</span>
+        <span class="chip">Visual Studio Code</span>
+
+        <span class="chip">Microsoft Word</span>
+        <span class="chip">Microsoft Excel</span>
+        <span class="chip">Microsoft PowerPoint</span>
+
       </div>
+
     </section>
 
+
+    <!-- ACADEMIC PROJECTS -->
     <section class="resume-section">
-      <h2 class="resume-h2">Selected Projects</h2>
+
+      <h2 class="resume-h2">
+        Academic Projects
+      </h2>
+
+
       <div class="resume-item">
-        <div class="resume-item-title">WordPress E-Commerce Website</div>
-        <p>A responsive e-commerce website developed locally using WordPress, Elementor, WooCommerce and XAMPP.</p>
+
+        <div class="resume-item-title">
+          Student Management Record System
+        </div>
+
+        <div class="resume-item-sub">
+          Technology: C++
+        </div>
+
+        <p>
+          Developed a desktop-based application for managing student
+          records. Implemented CRUD (Create, Read, Update, Delete)
+          functionality and applied Object-Oriented Programming
+          principles to structure the application.
+        </p>
+
       </div>
+
+
       <div class="resume-item">
-        <div class="resume-item-title">Personal Portfolio Website</div>
-        <p>A modern personal portfolio presenting services, skills, projects and contact information.</p>
+
+        <div class="resume-item-title">
+          Quiz Application — Quiz Lab
+        </div>
+
+        <div class="resume-item-sub">
+          Technology: Programming Fundamentals
+        </div>
+
+        <p>
+          Developed an interactive quiz application featuring
+          multiple-choice questions, automated score calculation,
+          user interaction, and question-answer functionality.
+          Applied programming fundamentals and logical
+          problem-solving techniques.
+        </p>
+
       </div>
+
+
       <div class="resume-item">
-        <div class="resume-item-title">Smart Attendance Management System</div>
-        <p>An attendance-management platform with role-based dashboards, attendance records and database integration, built with Spring Boot, React, PostgreSQL, Java and JWT.</p>
+
+        <div class="resume-item-title">
+          Library Management System
+        </div>
+
+        <div class="resume-item-sub">
+          Technology: Java
+        </div>
+
+        <p>
+          Developed a basic library management system for managing
+          books and student records. Applied classes, objects, and
+          Object-Oriented Programming concepts while strengthening
+          practical understanding of Java programming and software
+          design.
+        </p>
+
       </div>
-      <div class="resume-item">
-        <div class="resume-item-title">Student Record Management System</div>
-        <p>A C++ and Qt desktop application for adding, updating, deleting, searching and storing student records. University project, scored 10/10.</p>
-      </div>
+
     </section>
 
+
+    <!-- CORE STRENGTHS -->
     <section class="resume-section">
-      <h2 class="resume-h2">Current Learning Focus</h2>
-      <ul class="resume-list">
-        <li>Deepening frontend development skills with React and modern JavaScript</li>
-        <li>Advancing WordPress and Elementor customization techniques</li>
-        <li>Strengthening object-oriented programming and database fundamentals</li>
-      </ul>
+
+      <h2 class="resume-h2">
+        Core Strengths
+      </h2>
+
+      <div class="chip-row">
+
+        <span class="chip">Problem Solving</span>
+        <span class="chip">Quick Learner</span>
+        <span class="chip">Self-Motivated</span>
+        <span class="chip">Responsible</span>
+        <span class="chip">Team Collaboration</span>
+        <span class="chip">Adaptability</span>
+        <span class="chip">Communication</span>
+        <span class="chip">Independent Work</span>
+        <span class="chip">Willingness to Learn</span>
+
+      </div>
+
     </section>
 
+
+    <!-- CAREER OBJECTIVE -->
     <section class="resume-section">
-      <h2 class="resume-h2">Social Profiles</h2>
+
+      <h2 class="resume-h2">
+        Career Objective
+      </h2>
+
       <p>
-        LinkedIn: linkedin.com/in/abdul-wasiu-soomro-460648383<br />
-        GitHub: github.com/soomroabdulwasiu-blip
+        To begin my professional career as a Software Developer in an
+        environment where I can apply my programming and software
+        engineering knowledge, contribute to real-world projects,
+        and continuously develop my technical abilities.
       </p>
+
+      <p>
+        I aim to learn from experienced professionals, take on
+        challenging development opportunities, and build a strong
+        career in software engineering and freelancing.
+      </p>
+
     </section>
+
+
+    <!-- LANGUAGES -->
+    <section class="resume-section">
+
+      <h2 class="resume-h2">
+        Languages
+      </h2>
+
+      <div class="chip-row">
+
+        <span class="chip">
+          English — Professional Working Proficiency
+        </span>
+
+        <span class="chip">
+          Urdu — Native
+        </span>
+
+        <span class="chip">
+          Sindhi — Native
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- AVAILABILITY -->
+    <section class="resume-section">
+
+      <h2 class="resume-h2">
+        Availability
+      </h2>
+
+      <ul class="resume-list">
+
+        <li>
+          Software Engineering Internships
+        </li>
+
+        <li>
+          Junior Software Developer Roles
+        </li>
+
+        <li>
+          Freelance Projects
+        </li>
+
+        <li>
+          Remote Development Opportunities
+        </li>
+
+        <li>
+          Entry-Level Software Engineering Positions
+        </li>
+
+      </ul>
+
+    </section>
+
+
+    <!-- SOCIAL PROFILES -->
+    <section class="resume-section">
+
+      <h2 class="resume-h2">
+        Social Profiles
+      </h2>
+
+      <div class="profile-links">
+
+        <a
+          class="profile-link"
+          href="https://www.linkedin.com/in/muhammad-farhan-a41785365/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          class="profile-link"
+          href="https://github.com/K25SW01"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          class="profile-link"
+          href="mailto:smuhammadfarhanw@gmail.com"
+        >
+          Email
+        </a>
+
+      </div>
+
+    </section>
+
   </main>
+
 </body>
 </html>
