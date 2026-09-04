@@ -5,13 +5,14 @@ import { useTypewriter } from '../hooks/useTypewriter'
 import { scrollToId } from '../hooks/useScrollTop'
 import SocialIcons from '../components/SocialIcons'
 import profilePlaceholder from '../assets/profile-placeholder.svg'
+import portraitImage from '../assets/muhammad-farhan-profile.png'
 import './Hero.css'
 
 const badgeSkills = ['C++', 'Java', 'Python', 'GitHub']
 
 export default function Hero() {
   const typedTitle = useTypewriter(personal.rotatingTitles)
-  const [portraitSrc, setPortraitSrc] = useState('/assets/muhammad-farhan-profile.png')
+  const [portraitSrc, setPortraitSrc] = useState(portraitImage)
 
   const handleViewWork = (e) => {
     e.preventDefault()

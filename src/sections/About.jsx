@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import SectionHeading from '../components/SectionHeading'
 import { personal } from '../data/siteData'
 import profilePlaceholder from '../assets/profile-placeholder.svg'
+import aboutPortrait from '../assets/muhammad-farhan-profile.png'
 import './About.css'
 
 const infoRows = [
@@ -13,7 +14,7 @@ const infoRows = [
 ]
 
 export default function About() {
-  const [imgSrc, setImgSrc] = useState('/assets/muhammad-farhan-profile.png')
+  const [imgSrc, setImgSrc] = useState(aboutPortrait)
 
   return (
     <section id="about" className="section-light">

@@ -2,10 +2,10 @@ export const personal = {
   name: 'Muhammad Farhan',
   firstName: 'Muhammad',
   lastName: 'Farhan',
-  title: 'Aspiring Software Developer',
-  headline: 'B.E. Software Engineering Undergraduate | Aspiring Software Developer',
+  title: 'Inspired Software Engineer',
+  headline: 'B.E. Software Engineering Undergraduate | Inspired Software Engineer',
   rotatingTitles: [
-    'Aspiring Software Developer',
+    'Inspired Software Engineer',
     'B.E. Software Engineering Undergraduate',
     'Java Developer',
     'C++ Developer',
